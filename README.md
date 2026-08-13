@@ -90,7 +90,6 @@ It provides APIs for users, books, borrowing, reviews, admin features, and AI-ge
     ├── .env
     ├── .env.example
     ├── .gitignore
-    ├── Dockerfile
     ├── package.json
     └── README.md
 
@@ -132,14 +131,6 @@ The server will start at:
 Swagger API documentation is available at:
 
     http://localhost:5000/api-docs
-
-## Docker
-
-To run the backend using Docker:
-
-    docker build -t e-library-backend .
-
-    docker run -p 5000:5000 --env-file .env e-library-backend
 
 ## AI Book Summary
 
@@ -270,4 +261,3 @@ The tests cover:
 - Jest
 - Supertest
 - Swagger
-- Docker

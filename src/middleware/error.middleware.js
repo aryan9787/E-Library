@@ -3,7 +3,7 @@ const ApiError = require('../utils/ApiError');
 const errorHandler = (err, req, res, next) => {
   let error = err;
 
-  // Handle Mongoose CastError (e.g. invalid ObjectId)
+  // Handle Mongoose CastError
   if (err.name === 'CastError') {
     const message = `Resource not found. Invalid ${err.path}: ${err.value}`;
     error = new ApiError(400, message);
