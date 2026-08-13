@@ -35,7 +35,6 @@ class AIService {
     const prompt = `Summarize the following book in ~150 words based on its title and description: ${book.title} — ${book.description}`;
 
     const requestBody = {
-      model: 'gpt-3.5-turbo',
       messages: [
         {
           role: 'user',

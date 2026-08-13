@@ -1,3 +1,8 @@
+/**
+ * @file review.validator.js
+ * @description Zod validation schema for review creation parameters (rating 1-5, comment text).
+ */
+
 const { z } = require('zod');
 
 const createReviewSchema = z.object({
